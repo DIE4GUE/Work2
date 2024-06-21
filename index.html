@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+  <meta charset="UTF-8">
+  <title>banner and form</title>
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <div id="d1">
+      <img src="backpack.png">
+    </div>
+    <div id="d3">
+      <div class="div-5">
+        Мы знаем, как закончить <br/>школу за
+        <span style="color: rgb(0, 0, 0)">12 месяцев!</span>
+      </div>
+      <div class="div-6">А потом пойти работать</div>
+    </div>
+    <div id="d6">
+      <img src="arrow1.png">
+    </div>
+    <div id="d7">
+      <div class="div-9">Хотите также? Приходите к нам в Хекслет!</div>
+          <div class="div-10">
+            <span style="color: rgba(19, 110, 246, 1)">До 1 сентября</span>
+            оставьте заявку,
+            <br />
+            а мы подарим классные
+            <span style="color: rgba(19, 110, 246, 1)">бонусы</span>
+            для воодушевляющего старта
+          </div>
+    </div>
+    <div id="d12">
+      <img src="arrow2.png">
+    </div>
+    <div id="d13">
+      <div class="div-11">
+        <button class="btn-open" onclick="opden()">
+          А что подарите?
+        </button>
+      </div>
+    </div>
+    <div id="d14">
+      <img src="computer.png">
+    </div>
+  </div>
+
+  <div class="pre-form">
+    <div style="width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    z-index: 1;"></div>
+    <div id="form">
+      <div class="want">Хочу стать разработчиком!</div>
+      <div class="text">И получить один из трех подарков</div>
+      <div class="text1"><span style="font: 700 10px / 11px Onest, sans-serif;">1)Депозит на 20к.</span>Будет доступен после покупки профессии, им можно оплачивать дальнейшее обучение 
+        в Хекслете</div>
+      <div class="text2"><span style="font: 700 10px / 11px Onest, sans-serif;">2)Консультация с  экспертом в IT. </span>
+        Прояснит вопросы будущего трудоустройства: от поиска первой работы до развития карьеры</div>
+      <div class="text3"><span style="font: 700 10px / 11px Onest, sans-serif;">3)Возможность заморозить обучение на 2 месяца. </span>Перерыв, если нужно будет восстановить силы 
+        и не учиться</div>
+      <div class="mini-text">*Подарок определит сотрудник Хекслета после беседы. Мы уточним ваши намерения, поможем с выбором, а если поймем, что программирование – 
+        это не ваше, честно отговорим от обучения</div>
+      <div class="container">
+        <style>
+          .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+          }
+          
+          .contact-form {
+            display: flex;
+            gap: 18px;
+            line-height: 130%;
+          }
+          
+          .info-section {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 0;
+            width: fit-content;
+          }
+          
+          .info-section label {
+            font-feature-settings: "clig" off, "liga" off;
+            border-radius: 5px;
+            border: 1px solid rgba(19, 110, 246, 1);
+            background-color: #fff;
+            color: #9e9e9e;
+            white-space: nowrap;
+            padding: 21px 22px;
+            font: 400 13px Onest, sans-serif;
+          }
+          
+          .contact-details {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+          }
+          
+          .contact-details label {
+            color: #9e9e9e;
+            font-feature-settings: "clig" off, "liga" off;
+            font: 300 11px Onest, sans-serif;
+          }
+          
+          .email-details,
+          .phone-number {
+            margin-top: 8px;
+            color: #4a4a53;
+            font-feature-settings: "clig" off, "liga" off;
+            font: 400 14px Onest, sans-serif;
+          }
+          
+          .select-option {
+            display: flex;
+            gap: 20px;
+            justify-content: left;
+            border-radius: 5px;
+            border: 1px solid rgba(19, 110, 246, 1);
+            background-color: #fff;
+            padding: 18px 22px;
+            margin-top: 10px;
+            color: #9e9e9e;
+            font: 400 13px Onest, sans-serif;
+            
+          }
+          
+          .option-label {
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Onest, sans-serif;
+          }
+          
+          .select-img {
+            width: 15px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: center;
+          }
+          
+          .submit-button {
+            margin-top: 12px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: #136ef6;
+            color: #fcfcfc;
+            text-align: center;
+            padding: 13px 60px;
+            font: 700 18px Onest, sans-serif;
+            border: none;
+            cursor: pointer;
+          }
+          
+          .decorative-img {
+            width: 56px;
+            aspect-ratio: 0.66;
+            object-fit: cover;
+            object-position: center;
+            fill: #136ef6;
+            align-self: flex-end;
+            margin-top: 178px;
+          }
+          
+          .container {
+            display: grid;
+            grid-column-start: 14;
+            grid-column-end: 11;
+            grid-row-start: 3;
+            grid-row-end: 13;
+          }
+          </style>
+          
+          <section class="contact-form">
+            <form class="info-section">
+              <div class="contact-details">
+                <input class="inp" for="emailInput" placeholder=""><p class="inptext">Имя</p></input>
+              </div><div class="contact-details">
+                <input class="inp" for="emailInput" placeholder=""><p class="inptext">Электронная почта</p></input>
+              </div><div class="contact-details">
+                <input class="inp" for="emailInput" placeholder=""><p class="inptext">Номер телефона</p></input>
+              </div>
+              <div class="contact-details">
+                <select class="inp" style="font: 201 14px / 22px Onest, sans-serif;">
+                  <option disabled="disabled" selected="selected">Факультеты</option>
+                  <option>Факультет 1</option>
+                  <option>Факультет 2</option> 
+                </select>
+                <img class="arrow" src="dsdasd.png">
+              </div>
+              <button type="submit" class="submit-button">Жду звонка</button>
+            </form>
+            <img src="arr.svg" alt="" class="decorative-img" />
+          </section>
+    </div>
+    <div class="exit">
+      <button class="exit-btn" onclick="closen()">
+        <img src="exit.png" style="width: 2vw;
+    height: min-content;">
+      </button>
+    </div>
+    <div class="mini-text2">Все права защищены, соглашаюсь с <a href="">«Политикой конфиденциальности»</a> и <a href="">«Условиями оказания услуг»</a></div>
+  </div>
+  <script>
+    function opden() {
+      document.getElementById('form').className = 'opened';
+    }
+    function closen() {
+      document.getElementById('form').className = 'close'
+    }
+  </script>
+</body>
